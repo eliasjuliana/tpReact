@@ -1,0 +1,13 @@
+.employee-img{
+    max-width: 5rem;
+    height: 5rem;
+    border-radius: 10px;
+}
+
+.employee-card{
+    border-color: azure;
+    border-width: 5px;
+
+    background-color: rgb(24, 24, 23);
+    padding: 1rem;
+}
