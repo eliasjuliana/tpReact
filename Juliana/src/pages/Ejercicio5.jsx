@@ -1,12 +1,18 @@
-import { useRef, useState } from "react"
+import { useRef, useState, useEffect } from "react"
 import List from "../Components/Ejercicio4/List.jsx"
 import { getRandomNumber } from "../helpers.js";
 
-const Ejercicio4 = () => {
+const taskLS =  JSON.parse(localStorage.getItem('tasks')) || [];
 
-    const [tasks, setTasks] = useState([]);
+const Ejercicio5 = () => {
+
+    const [tasks, setTasks] = useState(taskLS);
 
     const taskRef = useRef();
+
+    useEffect(()=>{
+        localStorage.setItem('contacts', JSON.stringify(tasks))
+      }, [tasks])
 
     const isValid = (task) =>{
         if (task.trim().length < 2) {
@@ -30,7 +36,7 @@ const Ejercicio4 = () => {
                     content: task,
                 }
             ])
-          } else {
+        } else {
             alert('No se agrego la tarea');
         }
     };
@@ -52,4 +58,4 @@ const Ejercicio4 = () => {
     )
 }
 
-export default Ejercicio4
+export default Ejercicio5
