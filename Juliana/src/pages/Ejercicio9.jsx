@@ -12,7 +12,7 @@ const Ejercicio9 = () => {
         localStorage.setItem('appointments', JSON.stringify(appointments))
       }, [appointments])
 
-      console.log(appointments)
+    //   console.log(appointments)
 
     return (
         <div className="container-fluid p-5">
