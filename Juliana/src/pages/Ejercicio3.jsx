@@ -11,9 +11,9 @@ const Ejercicio3 = (props) => {
     }
 
     return (
-        <div>
+        <div className="exercise-container m-5 p-5">
             <h1>Hello {message}!</h1>
-            <button onClick={handleMessageChange}>Click here</button>
+            <button onClick={handleMessageChange} className="btn btn-danger">Click here</button>
         </div>
     )
 }

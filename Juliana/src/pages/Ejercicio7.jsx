@@ -16,9 +16,9 @@ let employees = [
   ]
   
 
-const List = () => {
+const Ejercicio7 = () => {
   return (
-    <section className="container p-3">
+    <section className="container-fluid p-3 exercise-container">
     {
         employees.map((item)=>{
             return <EmployeeCard key={item.id} fullName = {item.fullName} image = {item.pic} title = {item.title} department = {item.department}/>
@@ -28,4 +28,4 @@ const List = () => {
   )
 }
 
-export default List
+export default Ejercicio7

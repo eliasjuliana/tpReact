@@ -15,11 +15,11 @@ const Ejercicio9 = () => {
       console.log(appointments)
 
     return (
-        <>
+        <div className="container-fluid p-5">
         <h2>Complete el formulario para generar una cita</h2>
         <Form setAppointment = {setAppointment}/>
         <CardsGallery appointments = {appointments}/>
-        </>
+        </div>
     )
 }
 

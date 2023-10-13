@@ -30,13 +30,13 @@ const Ejercicio4 = () => {
                     content: task,
                 }
             ])
-          } else {
+        } else {
             alert('No se agrego la tarea');
         }
     };
 
     return (
-        <div className="container p-5 bg-dark">
+        <div className="container-fluid p-5 bg-dark exercise-container">
             <h1>Bienvenido</h1>
             <h2>Ingresa tus tareas</h2>
             <form onSubmit={handleSubmit}>

@@ -1,14 +1,14 @@
-import Item from "./Item.jsx";
+import Item from "./Item";
 
 const List = (props) => {
 
-    const {homeworks} = props;
+    const {tasks} = props;
 
     return (
         <ul>
             {
-                homeworks.map((homework)=>
-                    <Item key={homework.id} homework={homework}/>
+                tasks.map((task)=>
+                    <Item key={task.id} task={task}/>
                 )
             }
         </ul>

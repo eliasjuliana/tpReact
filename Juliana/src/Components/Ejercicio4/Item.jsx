@@ -1,10 +1,10 @@
 const Item = (props) => {
 
-    const {homework} = props;
+    const {task} = props;
 
     return (
             <li>
-                {homework.content} 
+                {task.content} 
             </li>
     )
 }

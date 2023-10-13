@@ -13,13 +13,11 @@ const Ejercicio6 = () => {
   }, [colors])
 
   return (
-    <>
-    <div>
+    <div className="container-fluid p-4 exercise-container">
         <h1>Administrar colores</h1>
         <ColorForm setColors={setColors}/>
         <ColorsList colors={colors} setColors={setColors}/>
     </div>
-    </>
   )
 }
 

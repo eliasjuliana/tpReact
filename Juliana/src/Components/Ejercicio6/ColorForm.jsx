@@ -26,21 +26,16 @@ const ColorForm = (props) => {
   };
 
   return (
-      <form onSubmit={handleSubmit} className="card">
+    <div className="container w-75">
+      <form onSubmit={handleSubmit} className="card  d-flex justify-content-center">
         <h5 className="card-header">Administrar colores</h5>
-        <div className="card-body d-flex gap-4">
+        <div className="card-body">
           <ColorPicker color={color} handleChange={handleChange}/>
           <p>{color}</p>
         </div>
         <button className="btn btn-primary" type="submit">Guardar</button>
       </form>
-      
-    // <div>
-    //     <fieldset>
-    //         <label htmlFor="color-input" className='form-label'>hola</label>
-    //         <input type="color" id='color-input' name='color' className='form-control' placeholder="Ingrese un color"/>
-    //     </fieldset>
-    // </div>
+    </div>
   )
 }
 

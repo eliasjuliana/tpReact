@@ -49,7 +49,7 @@ const Ejercicio8 = () => {
       };
 
   return (
-    <div className="container p-5 bg-dark">
+    <div className="container-fluid p-5 bg-dark exercise-container">
         <form onSubmit={handleSubmit}>
             <fieldset>
                 <label htmlFor="name-input" className='form-label'>Nombre</label>
