@@ -1,0 +1,18 @@
+const NewsForm = (props) => {
+
+  const {handleChange} = props;
+
+  return (
+    <form>
+        <select onChange={handleChange}>
+            <option>Seleccione una categoria</option>
+            <option value={'business'}>Business</option>
+            <option value={'health'}>Health</option>
+            <option value={'science'}>Science</option>
+            <option value={'technology'}>Technology</option>
+        </select>
+    </form>
+  )
+}
+
+export default NewsForm
