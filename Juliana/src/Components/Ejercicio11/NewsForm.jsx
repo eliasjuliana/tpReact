@@ -3,7 +3,7 @@ const NewsForm = (props) => {
   const {handleChange} = props;
 
   return (
-    <form>
+    <form className="mb-5">
         <select onChange={handleChange}>
             <option>Seleccione una categoria</option>
             <option value={'business'}>Business</option>

@@ -15,7 +15,7 @@ const fetchNews = async (category)=>{
     const response = await fetch(url);
     const data = await response.json();
     const newsArray = data.results;
-    console.log(newsArray);
+    // console.log(newsArray);
     return newsArray;
   } catch(e) {
     console.error(e);

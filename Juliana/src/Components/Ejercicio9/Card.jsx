@@ -3,7 +3,7 @@ const Card = (props) => {
     const {appointment} = props
 
     return (
-        <article className="bg-primary p-3 mt-4 col-5 m-2">
+        <article className="bg-dark p-3 mt-4 col-5 m-2">
             <div>
                 <p>Mascota: {appointment.name}</p>
                 <p>Duenio: {appointment.owner}</p>
@@ -13,7 +13,7 @@ const Card = (props) => {
                 <p>Hora: {appointment.time}</p>
                 <p>Sintomas: {appointment.symptoms}</p>
             </div>
-            <button>Borrar</button>
+            <button className="btn btn-danger">Borrar</button>
         </article>
     )
 }

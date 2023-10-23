@@ -5,7 +5,7 @@ const Navbar = () => {
     <>
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
-    <Link className="navbar-brand" href="#">Home</Link>
+    <Link className="navbar-brand" to="/">Home</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -75,11 +75,6 @@ const Navbar = () => {
             <NavLink className={(isActive)=>
                     isActive? 'nav-link active' : 'nav-link'
             } aria-current="page" to="/ejercicio13">Ejercicio13</NavLink>
-            </li>
-            <li className="nav-item">
-            <NavLink className={(isActive)=>
-                    isActive? 'nav-link active' : 'nav-link'
-            } aria-current="page" to="/ejercicio14">Ejercicio14</NavLink>
             </li>
       </ul>
     </div>

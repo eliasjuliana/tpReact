@@ -10,3 +10,14 @@ body {
 .exercise-container{
   height: 100vh;
 }
+
+
+.btn-home:hover{
+  background-color: rgba(213, 175, 216, 0.851);
+}
+
+.home-links{
+  text-decoration: none;
+  color: rgba(42, 41, 41, 0.647);
+  font-weight: 800;
+}
