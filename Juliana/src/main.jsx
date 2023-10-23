@@ -53,7 +53,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
               <Route exact path='/Ejercicio12' element={<Ejercicio12/>}></Route>
               <Route exact path='/Ejercicio13' element={<Ejercicio13/>}></Route>
             </Routes>
-            {if()}
             <Home/>
           <Footer/>
         </BrowserRouter>
